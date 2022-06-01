@@ -1,14 +1,4 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobidev/simplefolio/
-  Readme: https://github.com/cobidev/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
--->
+
 <!DOCTYPE html>
 <html lang="en" class="sr">
   <head>
@@ -23,7 +13,6 @@
     <meta name="keywords" content="[username], [name], skill" />
     <!-- Todo: improve your SEO by adding a small description of you -->
     <meta name="description" content="Dishant Singh Baraily  | Developer" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -36,11 +25,78 @@
 
     <!-- Todo: remove the below script once you finish your portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <style>
+  .navbar {
+    height: 77px;
+    line-height: 77px;
+    font-weight: 600;
+    -webkit-box-shadow: 0px 0px 30px 0.1px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 30px 0.1px rgba(0, 0, 0, 0.25);
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    background-color: #02aab0;
+    background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .navbar a{
+    color: white;
+  }
+  
+  .navbar .navbar-brand {
+    float: left;
+    font-size: 20px;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .navbar-nav {
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    float: right;
+    font-size: 15px;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+  }
+  
+  .navbar-nav .nav-item {
+    padding: 0px 30px;
+    height: auto;
+  }
+  
+  .navbar-nav .nav-item:hover {
+    color: black;
+  }
+  .navbar .navbar-brand:hover {
+    color: #ffff00;
+  }
+
+    </style>
   </head>
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
+    <nav class="navbar">
+			<div class="container">
+				<a href="#hero" class="navbar-brand">
+					<h1>Happy Coding</h1>
+				</a>
+				<div class="navbar-nav">
+					<a href="#hero" class="nav-item">Home</a>
+					<a href="#about" class="nav-item">About</a>
+					<a href="#projects" class="nav-item">Projects</a>
+					<a href="#contact" class="nav-item">Contact</a>
+				</div>
+			</div>
+		</nav>
+    
 
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
