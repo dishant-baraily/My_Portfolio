@@ -7,4 +7,4 @@ The tech stack used is :
 
 
 
-Live Demo: https://monumental-raindrop-02cd11.netlify.app/
+Live Demo: my-portfolio-jgxdcieeu-dishant-baraily.vercel.app
