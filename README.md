@@ -7,4 +7,4 @@ The tech stack used is :
 
 
 
-Live Demo: my-portfolio-jgxdcieeu-dishant-baraily.vercel.app
+Live Demo: https://my-portfolio-theta-gilt.vercel.app/
