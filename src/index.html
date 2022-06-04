@@ -18,6 +18,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="styles.scss" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
@@ -25,87 +26,174 @@
 
     <!-- Todo: remove the below script once you finish your portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <style>
-  .navbar {
-    height: 77px;
-    line-height: 77px;
-    font-weight: 600;
-    -webkit-box-shadow: 0px 0px 30px 0.1px rgba(0, 0, 0, 0.25);
-            box-shadow: 0px 0px 30px 0.1px rgba(0, 0, 0, 0.25);
-    -webkit-transition-duration: 0.5s;
-            transition-duration: 0.5s;
-    background-color: #02aab0;
-    background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-  }
+     <style>
+.wrapper {
+	width: 100%;
+  line-height: 77px;
+  font-weight: 600;
+  font-size: larger;
+	margin: 0 auto;
+  background-color: #02aab0;
+  background-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+}
 
-  .navbar a{
-    color: white;
-  }
-  
-  .navbar .navbar-brand {
-    float: left;
-    font-size: 20px;
-  }
-  
-  .navbar h1 {
-    margin: 0;
-    font-size: 20px;
-  }
-  
-  .navbar-nav {
-    height: inherit;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    float: right;
-    font-size: 15px;
-    -webkit-transition: all 0.1s ease-out;
-    transition: all 0.1s ease-out;
-  }
-  
-  .navbar-nav .nav-item {
-    padding: 0px 30px;
-    height: auto;
-  }
-  
-  .navbar-nav .nav-item:hover {
-    color: black;
-  }
-  .navbar .navbar-brand:hover {
-    color: #ffff00;
-  }
+
+
+
+
+@media (min-width: 200px) and (max-width: 480px ) {
+	header h1 {
+		margin-top: 0;
+		padding: .25em;
+		text-align: center;
+	}
+	nav {
+		font-size: 1.3em;
+		margin-right: 2.9em;
+		margin-left: 2.9em;
+		padding: 0;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	nav ul {
+		margin: 0;
+		padding: .10em;
+	}
+
+	nav li {
+		background-color: rgba(148, 187, 255, 1.0);
+		border-radius: 1em;
+		margin-top: 1em;
+		padding: .60em;
+		list-style: none;
+	}
+
+	nav a {
+		padding: 1em;
+		text-decoration: none;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+	header h1 {
+		margin-top: 0;
+		padding: .60em;
+		text-align: center;
+	}
+	nav {
+		background-color: rgba(148, 187, 255, 1.0);
+		font-size: 1.4em;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	nav ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	nav li {
+		display: inline;
+	}
+
+	nav a {
+		display: inline-block;
+		padding: 1em;
+		text-decoration: none;
+	}
+
+}
+
+@media (min-width: 769px) {
+	header {
+		padding: .35em;
+		width: 100%;
+	}
+
+	header h1 {
+		display: inline;
+		margin-top: 0;
+	}
+
+	header,
+	nav {
+		display: inline-block;
+	}
+
+	nav {
+		float: right;
+		font-size: 1.5em;
+	}
+
+	nav ul {
+		margin: 0;
+		display: inline;
+		padding-right: .15em;
+	}
+
+	nav ul li {
+		display: inline-block;
+		list-style: none;
+		padding: .36em 0.9375em;
+	}
+
+	nav a {
+		text-decoration: none;
+	}
+}​
   .tcontainer {
     width: 100%;
     height: 300px;
     margin-top: 100px;
   }
-  .timg img{
-    width: 200px;
-    height: 200px;
+  .timg{
+    display: flex;
   }
-    </style>
+  .wrapper h1{
+    color: white;
+  }
+  .navitem{
+    color: white;
+  }
+  .navitem :hover{
+    color: black;
+  }
+  .dimg{
+    margin: auto;
+    width: 130px;
+    height: 150px;
+  }
+  .dimg img{
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  </style>
   </head>
 
-  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
+
   <body>
     <div id="top"></div>
-    <nav class="navbar">
-			<div class="container">
-				<a href="#hero" class="navbar-brand">
-					<h1>Happy Coding</h1>
-				</a>
-				<div class="navbar-nav">
-					<a href="#hero" class="nav-item">Home</a>
-					<a href="#about" class="nav-item">About</a>
-					<a href="#projects" class="nav-item">Projects</a>
-          <a href="#techstack" class="nav-item">Tech Stack</a>
-					<a href="#contact" class="nav-item">Contact</a>
-				</div>
-			</div>
-		</nav>
-    
+    <!-- Navbar -->
+    <div class="wrapper">
+      <header>
+      	<h1 class="h1s">Happy Coding</h1>
+      	<nav>
+      	  <ul>
+            <li><a class="navitem" href="#hero">Home</a></li>
+            <li><a class="navitem" href="#about">About</a></li>
+            <li><a class="navitem" href="#projects">Projects</a></li>
+            <li><a class="navitem" href="#techstack">Tech Stack</a></li>
+            <li><a class="navitem" href="#contact">Contact</a></li>
+      	  </ul>
+      	</nav>
+      </header>
+    </div>
+    <!-- Navbar END -->
 
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
@@ -283,13 +371,14 @@
       <div class="tcontainer">
         <h2 class="section-title">Tech Stack</h2>
         <div class="timg">
-            <img src="assets/html.png" alt="">
-            <img src="assets/css3.png" alt="">
-            <img src="assets/react.png" alt="">
-            <img src="assets/java.png" alt="">
-            <img src="assets/boot.png" alt="">
-            <img src="assets/git.png" alt="">
-            <img src="assets/sass.png" alt="">
+          <div class="dimg"><img src="assets/html.png" alt=""></div>
+          <div class="dimg"><img src="assets/react.png" alt=""></div>
+          <div class="dimg"><img src="assets/java.png" alt=""></div>  
+          <div class="dimg"><img src="assets/boot.png" alt=""></div>
+          <div class="dimg"><img src="assets/git.png" alt=""></div>
+          <div class="dimg"><img src="assets/sass.png" alt=""></div>  
+          <div class="dimg"><img src="assets/css3.png" alt=""></div>
+            
         </div>
       </div>
     </section>
@@ -335,5 +424,15 @@
     <!-- /END Footer Section -->
 
     <script defer type="module" src="index.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
   </body>
 </html>
